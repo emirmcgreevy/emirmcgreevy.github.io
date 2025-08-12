@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects Page</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/stylesheet.css" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+  <script src="https://kit.fontawesome.com/91e0ab759a.js" crossorigin="anonymous"></script>
+
+  <style>
+        .main_h nav {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Consistent Sticky Header -->
+  <header class="main_h sticky">
+    <div class="row">
+      <a href="index.html" class="logo">E/M</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a href="project-mlb-shift.html">Breaking the Shift (MLB)</a></li>
+              <li><a href="project-nfl-salaries.html">NFL Salary Efficiency</a></li>
+              <li><a href="project-athletes-interviews.html">Athlete UX Study</a></li>
+              <li><a href="project-baseball-website.html">Baseball Stats Website</a></li>
+              <li><a href="project-skyline.html">Skyline XC Website</a></li>
+            </ul>
+          </li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="row">
+    <section class="projects-grid">
+      <a href="project-mlb-shift.html" class="project-card-link">
+        <div class="project-card">
+          <img src="/images/mlb-logo.svg.webp" alt="MLB Logo" />
+          <div class="project-card-content">
+            <h3>Breaking the Shift</h3>
+            <p>Analyzed MLB's shift ban impact using OAA, DRS, and ground ball batting averages.</p>
+            <p class="tags">R • FanGraphs • DataViz</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="project-nfl-salaries.html" class="project-card-link">
+        <div class="project-card">
+          <img src="/images/nfl-logo.svg" alt="NFL Logo" />
+          <div class="project-card-content">
+            <h3>NFL Salary Efficiency</h3>
+            <p>Used SQL to identify which NFL positions or areas are worth investing in and have the best ROI in terms of wins.</p>
+            <p class="tags">SQL • Excel</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="project-athletes-interviews.html" class="project-card-link">
+        <div class="project-card">
+          <img src="/images/umich-athletics.jpg" alt="University of Michigan Athletics Logo" />
+          <div class="project-card-content">
+            <h3>UX Study on University of Michigan Athletes</h3>
+            <p>Conducted user research on how female athletes use practice and workout facilities.</p>
+            <p class="tags">Qualitative Analysis • User Research • Interviewing</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="project-baseball-website.html" class="project-card-link">
+        <div class="project-card">
+          <img src="/images/tigers-logo.png" alt="Detroit Tigers Baseball Logo" />
+          <div class="project-card-content">
+            <h3>Baseball Stats Website</h3>
+            <p>Built an interactive site presenting baseball statistics with a clean UI.</p>
+            <p class="tags">HTML • CSS • JavaScript • Python</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="project-skyline.html" class="project-card-link">
+        <div class="project-card">
+          <img src="/images/skyline_logo.png" alt="Skyline High School Logo" />
+          <div class="project-card-content">
+            <h3>Skyline XC Website</h3>
+            <p>Designed a website for XC team that imports data using Python</p>
+            <p class="tags">HTML • CSS • Python</p>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer Placeholder -->
+  <footer class="footer">
+    <div class="footer-logo">
+        <span style="font-size: 2rem;">
+            <a href="https://github.com/emirmcgreevy" aria-label="Github Logo">
+                <i class="fa-brands fa-github" style="color: #666666;"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/emir-mcgreevy-1024b82a7" aria-label="LinkedIn Logo">
+                <i class="fa-brands fa-linkedin" style="color: #666666;"></i>
+            </a>
+        </span>
+    </div>
+    <div class="footer-row">
+        <p>© 2025 Emir McGreevy</p>
+    </div>
+  </footer>
+</body>
+</html>

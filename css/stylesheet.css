@@ -1,0 +1,779 @@
+/* ======================= */
+/*        Header           */
+/* ======================= */
+.main_h {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 1100;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: visible;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 766px) {
+  .main_h {
+    padding-top: 25px;
+  }
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.93);
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+  width: 50px;
+  font-size: 25px;
+  color: #666666;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+/* ======================= */
+/*     Navigation Bar      */
+/* ======================= */
+nav {
+  float: right;
+  width: 60%;
+}
+
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+
+nav ul, .nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  float: right;
+}
+
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* ======================= */
+/*     Dropdown Menu      */
+/* ======================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background-color: #fff;
+  min-width: 250px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  padding: 0.75rem 1rem;
+  color: #333;
+  white-space: nowrap;
+  text-transform: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f7f7f7;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* ======================= */
+/*      Mobile Toggle      */
+/* ======================= */
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+/* ======================= */
+/*        Homepage         */
+/* ======================= */
+.hero {
+  position: relative;
+  background: #32456dff no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+  min-height: 100vh;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.3;
+  padding: 10rem;
+}
+.hero h1 span {
+  font-size: 50px;
+  color: #a4c2f4;
+  border-bottom: 2px solid #a4c2f4;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid #a4c2f4;
+  position: absolute;
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+}
+.mouse span {
+  display: block;
+  margin: 6px auto;
+  width: 2px;
+  height: 2px;
+  border-radius: 4px;
+  background: #a4c2f4;
+  border: 1px solid transparent;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+
+/* ======================= */
+/*     General Layout      */
+/* ======================= */
+.row {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+.head {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #666666;
+  background: white;
+  font-family: "Cardo", serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.content {
+  padding: 50px 2%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* ======================= */
+/*       About Page        */
+/* ======================= */
+.about-text {
+  padding: 2rem;
+}
+
+.profile-pic {
+  float: left;
+  max-width: 250px;
+  border-radius: 8px;
+  margin-right: 2rem;
+  margin-top: 2.5rem;
+}
+
+/* ======================= */
+/*      Project Grid       */
+/* ======================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%; /* ensures it fills the grid row */
+  min-height: 450px; /* standard height */
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px; /* fixed height for images */
+  object-fit: contain; /* maintain aspect ratio */
+  background: white;
+  margin-top: 2rem;
+}
+
+.project-card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  font-style: italic;
+  color: #555;
+  margin-top: 1rem;
+}
+
+/* ======================= */
+/*       Resume Page       */
+/* ======================= */
+.resume-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  line-height: 1.6;
+  color: #666;
+  background-color: #fff;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resume-header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.resume-header .btn {
+  display: inline-block;
+  background-color: #32456dff;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: 2px solid #32456dff;
+}
+
+.resume-header .btn:hover {
+  color: #32456dff;
+  background-color: white;
+  border: 2px solid #32456dff;
+}
+
+.resume-section {
+  margin-bottom: 3rem;
+}
+
+.resume-section h2 {
+  font-size: 1.75rem;
+  color: #003366;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.resume-section p {
+  margin-bottom: 1rem;
+}
+
+.resume-section ul {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.relevant-coursework li {
+  margin-bottom: 0.5rem;
+}
+
+.skills-list,
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li, .interests li {
+  background-color: #f0f4f8;
+  color: #003366;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+/* ======================= */
+/*     MLB Shift Page      */
+/* ======================= */
+
+/* Layout container */
+.poster-style-layout {
+  margin: 3rem auto;
+  padding: 0 4rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.authors {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* Content Boxes */
+.poster-box {
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+}
+
+.light-blue {
+  background-color: #32456dff;
+  border-left: 8px solid #bf0d3eff;
+  color: white;
+}
+
+.white {
+  background-color: #32456dff;
+  border-left: 8px solid #bf0d3eff;
+  color: white;
+}
+
+.soft-red {
+  background-color: #32456dff;
+  border-left: 8px solid #bf0d3eff;
+  color: white;
+}
+
+.poster-box h2 {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.poster-box ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.poster-box p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.metric-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.metric-row .poster-box {
+  flex: 1 1 300px; /* responsive sizing */
+  background-color: #32456dff;
+  border-left: 8px solid #bf0d3eff;
+  color: white;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #041e42;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #155ab6;
+}
+
+.image-text-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.image-text-row img {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.image-text-row p {
+  flex: 1;
+  margin: 0;
+}
+
+/* ============================== */
+/*     Baseball Website Page      */
+/* ============================== */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-preview {
+  height: 45rem;
+  width: 90%;
+  border: none; /* Optional */
+}
+
+.baseball-web-subtitle {
+  padding: 0 4rem;
+  width: 100%;
+}
+
+.key-features {
+  margin-left: 2rem;
+  list-style-type: circle;
+}
+
+/* ======================== */
+/*     NFL Project Page     */
+/* ======================== */
+.project-header {
+  font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.project-section {
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  background-color: #32456dff;
+  border-left: 8px solid #bf0d3eff;
+  color: white;
+}
+
+.project-section-2{
+   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem; 
+
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  background-color: #32456dff;
+  border-left: 8px solid #bf0d3eff;
+  color: white;
+}
+
+.text-column {
+  flex: 1;
+}
+
+.nfl-graph {
+  max-width: 40%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-section ul {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+.nfl-graph {
+
+}
+
+.team-card {
+  /* background: #f5faff;
+  border-left: 4px solid #0077cc; */
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+/* ======================== */
+/*    UX Athlete Project    */
+/* ======================== */
+.ux-project-wrapper {
+  background-color: #f9f9fb;
+  padding: 3rem 1rem;
+}
+
+.ux-project-container {
+  
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ux-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2a4d69; /* Deep blue tone */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ux-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.ux-section-title {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+  color: #4b86b4; /* Accent blue */
+  border-bottom: 2px solid #e0e6ed;
+  padding-bottom: 0.3rem;
+}
+
+.ux-list {
+  margin: 0 0 1.5rem 1.5rem;
+  padding: 0;
+}
+
+.ux-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.ux-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.ux-quote {
+  margin: 1rem 0;
+  padding: 1rem 1.25rem;
+  background: #eef5fb;
+  border-left: 5px solid #4b86b4;
+  font-style: italic;
+  color: #2a4d69;
+}
+
+@media (max-width: 768px) {
+  .ux-project-container {
+    padding: 1.5rem;
+  }
+  .ux-title {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* ======================== */
+/*          Footer          */
+/* ======================== */
+.footer-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.footer-row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}

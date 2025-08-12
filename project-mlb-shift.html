@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breaking the Shift</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/91e0ab759a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Sticky Navigation Header -->
+  <header class="main_h sticky">
+    <div class="row">
+      <a href="index.html" class="logo">E/M</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a href="project-mlb-shift.html">Breaking the Shift (MLB)</a></li>
+              <li><a href="project-nfl-salaries.html">NFL Salary Efficiency</a></li>
+              <li><a href="project-athletes-interviews.html">Athlete UX Study</a></li>
+              <li><a href="project-baseball-website.html">Baseball Stats Website</a></li>
+              <li><a href="project-skyline.html">Skyline XC Website</a></li>
+            </ul>
+          </li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+      <main class="poster-style-layout">
+        <h1 class="project-title">Breaking the Shift: How MLB’s Rule Change Affected <br/>Offensive and Defensive Production</h1>
+        <p class="authors">By Emir McGreevy & Josh Pomerantz</p>
+
+        <!-- First Column Box -->
+        <section class="poster-box light-blue">
+          <h2>Introduction</h2>
+          <p>
+            Prior to the 2023 season, Major League Baseball implemented a rule change that imposed restrictions on the shift. Under the new rules, teams were required to have at least four players in the infield and at least two on each side of second base. The goal of this rule change was to increase offensive production and raise batting average on balls in play.
+            <br/>This project examines whether the shift ban achieved its intended effects in its first two years. Since left-handed hitters were shifted against more frequently, we will also analyze whether they experienced a greater impact from these changes. Additionally, we assess how the rule change influenced defensive performance by comparing team and positional metrics such as Outs Above Average and Defensive Runs Saved before and after the shift ban. We also examine its effect on double play frequency, providing insight into how infield positioning adjustments may have altered defensive efficiency.
+          </p>
+        </section>
+
+        <div class="metric-row">
+          <!-- Key Metric Box -->
+          <section class="poster-box metric-data">
+            <h2>Key Metrics</h2>
+              <p>OAA (Outs Above Average): a range-based metric of skill that shows how many outs a player has saved</p>
+              <p>DRS (Defensive Runs Saved): quantifies a player's entire defensive performance by measuring how many runs a defender saved</p>
+              <p>DPF (Double Plays Finished): a fielding statistic that counts the number of double plays a team completes</p>
+          </section>
+
+          <!-- Data Box -->
+          <section class="poster-box metric-data">
+            <h2>Data</h2>
+            <p>
+              We used play-by-play data from Retrosheet and team and individual fielding data from FanGraphs.
+            </p>
+          </section>
+        </div>
+
+        <!-- Hitting Analysis Box -->
+        <section class="poster-box light-blue">
+          <h2>Hitting Analysis</h2>
+
+          <div class="image-text-row">
+            <img src="/images/gbba-handedness-graph.jpg" alt="Ground Ball Batting Average by Handedness" />
+            <p>
+              This chart compares ground ball batting averages for left- and right-handed hitters before and after the shift ban.
+              Left-handed hitters saw a more noticeable increase (.226 to .239) compared to right-handed hitters (.247 to .249),
+              suggesting the rule change had its intended effect. Since lefties were more frequently impacted by shifts, their
+              improvement aligns with expectations.
+            </p>
+          </div>
+
+          <div class="image-text-row">
+            <img src="/images/top-players-graph.jpg" alt="Top Players Ground Ball Batting Average Change" />
+            <p>
+              This chart shows the top 10 players with the largest increases in GB batting average. Six of the top seven are
+              left-handed, supporting that shift restrictions benefitted them most. Though some righties improved, lefties
+              clearly gained more.
+            </p>
+          </div>
+        </section>
+
+        <!-- Defensive Analysis Box -->
+        <section class="poster-box white">
+          <h2>Defensive Analysis</h2>
+          
+          <div class="image-text-row">
+            <img src="/images/centeredFacetGraph.png" alt="Bar graph showing Ground Ball Batting Average by Handedness" />
+            <p>
+              This graph highlights the relationship between outs above average (OAA) and defensive runs saved (DRS) per team before and after the shift ban. The two metrics have a positive relationship before and after the MLB banned the defensive shift. In the two seasons after the ban was implemented, the spread is slightly narrower, meaning there are fewer extreme outlier performances amongst MLB teams, but overall defensive performance is relatively the same before and after the new rule was put in place.
+            </p>
+          </div>
+
+          <div class="image-text-row">
+            <p>
+              We also looked into the average double plays finished per team in the different shift eras. In the 2021 and 2022 seasons, the average double plays completed was 130.1, while the two seasons after had a slight decrease with an average of 123.5. This number is not surprising due to the fact that infielders are limited in their positioning, which could reduce the frequency of double plays. Although it was not major, the defensive shift still had some impact on defensive performance.
+            </p>
+            <img src="/images/dpf-graph.jpg" alt="Bar graph showing Ground Ball Batting Average by Handedness" />
+          </div>
+          
+          <div class="image-text-row">
+            <img src="/images/drs-oaa-graph.jpg" alt="Bar graph showing Ground Ball Batting Average by Handedness" />
+            <p>
+              We took a closer look at how the second base and shortstop positions were affected by the shift ban, since they are more likely to be impacted by the rule change. The average DRS for second basemen increased, likely because they are making traditional plays more consistently. The OAA for second basemen decreased, possibly due to the fewer deep-range plays that they could be making in short right field. For shortstops, the decrease in DRS could be because they are making tougher plays after the shift ban, leading to more errors or reduced efficiency. OAA may have increased because shortstops are now making more plays with greater range.
+            </p>
+          </div>
+        </section>
+
+        <!-- Conclusion Box -->
+        <section class="poster-box soft-red">
+          <h2>Conclusion</h2>
+          <p>
+            In terms of offensive production, we found that the new shift rules were effective in increasing batting average on ground balls, specifically for left-handed hitters. Defensively, the shift ban did not largely impact the number of runs saved or outs that a team made. However, the restraints on infield positioning made it more difficult for players to turn double plays. The change in positioning due to the shift rule ban led to altered defensive opportunities for second basemen and shortstops, with each position experiencing different impacts on their defensive metrics.
+          </p>
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <a href="/images/MSAS-Poster.pdf" class="btn" target="_blank">Download Full Poster (PDF)</a>
+          </div>
+        </section>
+
+        <!-- Awards Box -->
+        <section class="poster-box soft-red">
+          <h2>Honors & Awards</h2>
+          <p>
+            Won second place at the Michigan Sports Analytics Society 2025 Symposium against 30+ other analytics projects.
+          </p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-logo">
+            <span style="font-size: 2rem;">
+                <a href="https://github.com/emirmcgreevy" aria-label="Github Logo">
+                    <i class="fa-brands fa-github" style="color: #666666;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/emir-mcgreevy-1024b82a7" aria-label="LinkedIn Logo">
+                    <i class="fa-brands fa-linkedin" style="color: #666666;"></i>
+                </a>
+            </span>
+        </div>
+        <div class="footer-row">
+            <p>© 2025 Emir McGreevy</p>
+        </div>
+      </footer>
+    </body>
+</html>

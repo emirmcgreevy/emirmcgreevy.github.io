@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NFL Salary Efficiency</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/91e0ab759a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Sticky Navigation Header -->
+  <header class="main_h sticky">
+    <div class="row">
+      <a href="index.html" class="logo">E/M</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="projects.html">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a href="project-mlb-shift.html">Breaking the Shift (MLB)</a></li>
+              <li><a href="project-nfl-salaries.html">NFL Salary Efficiency</a></li>
+              <li><a href="project-athletes-interviews.html">Athlete UX Study</a></li>
+              <li><a href="project-baseball-website.html">Baseball Stats Website</a></li>
+              <li><a href="project-skyline.html">Skyline XC Website</a></li>
+            </ul>
+          </li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+        <main class="poster-style-layout">
+          <section class="project-header">
+            <h1>Business Value in NFL Salary Efficiency</h1>
+          </section>
+
+          <section class="project-section">
+            <h2>Project Overview</h2>
+            <p>This project was the final assignment for my SQL & Databases class, where I was tasked to find a dataset and from that create a promising business opportunity. I chose to investigate salary efficiency in the NFL through SQL-based data analysis. I proposed a consulting service to help NFL front offices make smarter salary allocation decisions using wins-per-dollar dashboards, positional ROI models, and roster simulations.</p>
+          </section>
+
+          <section class="project-section">
+            <h2>The Business Idea</h2>
+            <ul>
+              <li><strong>Wins-per-Dollar Dashboards</strong> – Visual tools that compare team performance to salary spend</li>
+              <li><strong>Positional ROI Models</strong> – Show which positions yield the best value</li>
+              <li><strong>Roster Construction Simulations</strong> – Recommend optimal spending scenarios</li>
+            </ul>
+          </section>
+
+          <section class="project-section">
+            <h2>The Dataset</h2>
+            <p>Using 2023 season data, I analyzed team wins, player salaries, and positional spending. I organized the data into an entity relationshipm diagram and proceeded to use SQL to help uncover trends in efficiency across the league’s 32 teams.</p>
+
+            <img src="images/SI 311 Final Project Step 1 (1).png" alt="NFL data Entity Relationship Diagram" />
+          </section>
+
+          <section class="project-section">
+            <h2>Key Findings</h2>
+            <div class="team-card">
+              <h3>Most Efficient: Minnesota Vikings</h3>
+              <ul>
+                <li><strong>Record:</strong> 14–3</li>
+                <li><strong>Total Salary:</strong> $160.5M</li>
+                <li><strong>Wins per $1M:</strong> 0.087</li>
+              </ul>
+            </div>
+            <div class="team-card">
+              <h3>Least Efficient: Cleveland Browns</h3>
+              <ul>
+                <li><strong>Record:</strong> 3–14</li>
+                <li><strong>Total Salary:</strong> $191.3M</li>
+                <li><strong>Wins per $1M:</strong> 0.016</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="project-section-2">
+            <div class="text-column">
+            <h2>Where to Spend</h2>
+            <p><strong>Quarterback spending</strong> showed the strongest correlation with wins:</p>
+            <ul>
+              <li>High QB spenders averaged <strong>9.06 wins</strong></li>
+              <li>Low QB spenders averaged <strong>7.94 wins</strong></li>
+              <li>Defensive spending and overall team salary were less predictive of success</li>
+            </ul>
+            </div>
+
+            <img src="images/Average Wins Per Spending Category.png" alt="Average Wins per Spending Category Bar Chart" class="nfl-graph"/>
+            </section>
+
+          <section class="project-section">
+            <h2>Tools & Skills Used</h2>
+            <p>SQL · ER Diagrams · ROI Analysis · Data Storytelling</p>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <div class="footer-logo">
+              <span style="font-size: 2rem;">
+                  <a href="https://github.com/emirmcgreevy" aria-label="Github Logo">
+                      <i class="fa-brands fa-github" style="color: #666666;"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/emir-mcgreevy-1024b82a7" aria-label="LinkedIn Logo">
+                      <i class="fa-brands fa-linkedin" style="color: #666666;"></i>
+                  </a>
+              </span>
+          </div>
+          <div class="footer-row">
+              <p>© 2025 Emir McGreevy</p>
+          </div>
+        </footer>
+    </body>
+</html>
