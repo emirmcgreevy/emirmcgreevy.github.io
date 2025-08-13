@@ -214,9 +214,9 @@ nav ul li a {
 .mouse {
   display: block;
   margin: 0 auto;
-  width: 26px;
-  height: 46px;
-  border-radius: 13px;
+  width: 46px;
+  height: 76px;
+  border-radius: 33px;
   border: 2px solid #a4c2f4;
   position: absolute;
   bottom: 40px;
