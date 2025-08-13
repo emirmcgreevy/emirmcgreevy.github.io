@@ -226,9 +226,9 @@ nav ul li a {
 }
 .mouse span {
   display: block;
-  margin: 6px auto;
-  width: 2px;
-  height: 2px;
+  margin: 24px auto;
+  width: 3px;
+  height: 3px;
   border-radius: 4px;
   background: #a4c2f4;
   border: 1px solid transparent;
